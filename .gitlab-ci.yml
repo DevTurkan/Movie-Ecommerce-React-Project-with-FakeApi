@@ -1,0 +1,29 @@
+stages:
+    - build
+    - deploy
+build:
+    stage: build
+    tags: 
+    - intbankweb
+    script:
+        - echo "Building deploy package"
+        - npm install
+        - npm run build
+        - echo "Build successful"
+    artifacts:
+        expire_in: 1 hour
+        paths:
+            - build
+deploy_production:
+    stage: deploy
+    tags: 
+      - intbankweb
+    script:
+        - echo "Deploying to server"
+        - cp -rv build/* /var/www/eglobe/html/
+        - echo "Deployed"
+    environment:
+        name: production
+        url: http://demo.gaiabilgi.com.tr:7076
+    only:
+        - master

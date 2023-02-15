@@ -1,0 +1,128 @@
+.section1{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+    .container1{
+        margin: 110px 0 60px;
+        padding: 30px;
+        width: calc(100% - 300px);
+        background-color: rgb(228, 228, 228);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container1_setting{
+            width: 80%;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            background-color: rgb(253, 253, 253);
+            padding: 30px;
+            h1{
+                width: 80%;
+                font-size: 20px;
+                font-weight: 600;
+                text-align: right;
+                margin-bottom: 25px;
+                font-family: 'Poppins-Regular';
+            }
+
+            form{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                input{
+                    width: 100%;
+                    padding: 7px;
+                    margin-bottom: 22px;
+                    border: 1px solid black;
+                    border-radius: 6px;
+                }
+
+                button{
+                    width: max-content;
+                    border-radius: 6px;
+                    background-color: rgb(34, 63, 105);
+                    color: white;
+                    padding: 8px 12px;
+                    font-family: 'Poppins-Regular';
+                    // font-size: 17px;
+                }
+            }
+
+            .container1_profile_line{
+                width: 100%;
+                height: 2px;
+                background-color: rgb(122, 122, 122);
+                margin: 30px 0;
+            }
+
+            .links{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                // margin-left: 15px;
+                a{
+                    &:first-child{
+                        margin-bottom: 8px;
+                    }
+
+                    h3{
+                        font-size: 15px;
+                        color: rgb(36, 100, 240);
+                        font-weight: 400;
+                        svg{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ------------------RESPONSIVELIK-----------
+@media screen and (min-width: 500px) and (max-width: 599px){
+    .container1{
+        width: calc(100% - 100px) !important;
+
+        .container1_setting{
+            width: 100% !important;
+
+            form{
+                width: 80% !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px){
+    .container1{
+        width: calc(100% - 100px) !important;
+
+        .container1_setting{
+            width: 100% !important;
+
+            form{
+                width: 80% !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1150px){
+    .container1{
+        width: calc(100% - 200px) !important;
+
+        .container1_setting{
+            width: 100% !important;
+        }
+    }
+}

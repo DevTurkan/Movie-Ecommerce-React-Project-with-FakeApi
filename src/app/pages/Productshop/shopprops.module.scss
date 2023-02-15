@@ -1,0 +1,394 @@
+.prp_cardcom{
+display: flex;
+justify-content: center;
+align-items: center;
+    background-color: white;
+    box-shadow: rgba(41, 46, 54, 0.9) 0px 0px 15px;
+    width:calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-top: 30px;
+    // cursor: pointer;
+    transition: .3s ease-in-out;
+    perspective: 100px;
+
+    height: 321px;
+
+    &:nth-child(4n + 4){
+        margin-right: 0;
+    }
+
+    .prp_card{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+
+        justify-content: space-between;
+        .prp_cardimg{
+            position: relative;
+            width: 100%;
+            height: 70%;
+            box-shadow: rgba(76, 84, 97, 0.9) 0px 0px 15px;
+            border-radius: 6px;
+            // overflow: hidden;
+            // border: 1px solid red;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+
+                // height: 300px;
+            }
+
+           
+        }
+
+        .prp_cardtitle{
+            // margin-top: 10px;
+            position: relative;
+            width: 100%;
+            height: 24%;
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid green;
+            h4{
+                // text-align: center;
+                // font-size: 16px;
+                // font-family: 'Poppins-Regular';
+                font-weight: 500;
+                margin-bottom: 6px;
+            }
+
+            p{
+                // text-align: center;
+                font-family: 'Poppins-Regular';
+                font-size: 17px;
+                font-weight: 600;
+                color: rgb(0, 89, 255);
+
+            }
+
+            .prp_cardicons{
+                position: absolute;
+                top: 12px;
+                right: 0;
+                width: 45%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+
+                .icons_heart, .icons_basket{
+                    width: 40px;
+                    height: 40px;
+                    // border-radius: 50%;
+                    // background-color: rgb(255, 255, 255);
+                    // border: 1px solid rgb(19, 38, 80);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all .5s;
+                    cursor: pointer;
+                    // box-shadow: rgba(36, 38, 43, 0.9) 0px 0px 15px;
+                    svg{
+                        // border: 1px solid rgb(19, 38, 80);
+                        // color: rgb(19, 38, 80);
+                        font-size: 19px;
+                        color:rgb(16, 16, 87);
+                    }
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                .icons_heart{
+                    svg{
+                        color:red;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// ------------------RESPONSIVELIK-----------
+
+@media screen and (min-width: 500px) and (max-width: 619px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            background-color: white;
+            box-shadow: rgba(41, 46, 54, 0.9) 0px 0px 15px;
+            width: 70% !important;
+            margin-right: 0px !important;
+            margin-top: 30px;
+            // cursor: pointer;
+            transition: .3s ease-in-out;
+            perspective: 100px;
+        
+            height: 321px;
+        
+            &:nth-child(4n + 4){
+                margin-right: 0px !important;
+            }
+
+            &:nth-child(2n + 2){
+                margin-right: 0 !important;
+            }
+        
+        .prp_cardimg{
+            position: relative;
+            width: 98% !important;
+            height: 70%;
+            box-shadow: rgba(76, 84, 97, 0.9) 0px 0px 15px;
+            border-radius: 6px;
+            // overflow: hidden;
+            // border: 1px solid red;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+
+                // height: 300px;
+            }
+
+            
+        }
+
+        .prp_cardtitle{
+            // margin-top: 10px;
+            position: relative;
+            width: 98% !important;
+            height: 24%;
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid green;
+            h4{
+                font-size: 13px !important;
+            }
+
+            p{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 699px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            background-color: white;
+            box-shadow: rgba(41, 46, 54, 0.9) 0px 0px 15px;
+            width:calc((100% - 30px) / 2) !important;
+            margin-right: 30px !important;
+            margin-top: 30px;
+            // cursor: pointer;
+            transition: .3s ease-in-out;
+            perspective: 100px;
+        
+            height: 321px;
+        
+            &:nth-child(4n + 4){
+                margin-right: 30px !important;
+            }
+
+            &:nth-child(2n + 2){
+                margin-right: 0 !important;
+            }
+        
+        .prp_cardimg{
+            position: relative;
+            width: 98% !important;
+            height: 70%;
+            box-shadow: rgba(76, 84, 97, 0.9) 0px 0px 15px;
+            border-radius: 6px;
+            // overflow: hidden;
+            // border: 1px solid red;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+
+                // height: 300px;
+            }
+
+            
+        }
+
+        .prp_cardtitle{
+            // margin-top: 10px;
+            position: relative;
+            width: 98% !important;
+            height: 24%;
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid green;
+            h4{
+                font-size: 13px !important;
+            }
+
+            p{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 929px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            background-color: white;
+            box-shadow: rgba(41, 46, 54, 0.9) 0px 0px 15px;
+            width:calc((100% - 70px) / 2) !important;
+            margin-right: 70px !important;
+            margin-top: 30px;
+            // cursor: pointer;
+            transition: .3s ease-in-out;
+            perspective: 100px;
+        
+            height: 321px;
+        
+            &:nth-child(4n + 4){
+                margin-right: 30px !important;
+            }
+
+            &:nth-child(2n + 2){
+                margin-right: 0 !important;
+            }
+        
+        .prp_cardimg{
+            position: relative;
+            width: 90% !important;
+            height: 70%;
+            box-shadow: rgba(76, 84, 97, 0.9) 0px 0px 15px;
+            border-radius: 6px;
+            // overflow: hidden;
+            // border: 1px solid red;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+
+                // height: 300px;
+            }
+
+            
+        }
+
+        .prp_cardtitle{
+            // margin-top: 10px;
+            position: relative;
+            width: 90% !important;
+            height: 24%;
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid green;
+            h4{
+                font-size: 13px !important;
+            }
+
+            p{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 930px) and (max-width: 1249px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            background-color: white;
+            box-shadow: rgba(41, 46, 54, 0.9) 0px 0px 15px;
+            width:calc((100% - 60px) / 3) !important;
+            margin-right: 30px;
+            margin-top: 30px;
+            // cursor: pointer;
+            transition: .3s ease-in-out;
+            perspective: 100px;
+        
+            height: 321px;
+        
+            &:nth-child(4n + 4){
+                margin-right: 30px !important;
+            }
+
+            &:nth-child(3n + 3){
+                margin-right: 0 !important;
+            }
+        
+        .prp_cardimg{
+            position: relative;
+            width: 95% !important;
+            height: 70%;
+            box-shadow: rgba(76, 84, 97, 0.9) 0px 0px 15px;
+            border-radius: 6px;
+            // overflow: hidden;
+            // border: 1px solid red;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+
+                // height: 300px;
+            }
+
+            
+        }
+
+        .prp_cardtitle{
+            // margin-top: 10px;
+            position: relative;
+            width: 95% !important;
+            height: 24%;
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid green;
+            h4{
+                font-size: 13px !important;
+            }
+
+            p{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1320px){
+    .prp_cardtitle{
+        // margin-top: 10px;
+        position: relative;
+        width: 100%;
+        height: 24%;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid green;
+        h4{
+            // text-align: center;
+            // font-size: 16px;
+            // font-family: 'Poppins-Regular';
+            font-size: 13px !important;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        p{
+            // text-align: center;
+            font-family: 'Poppins-Regular';
+            font-size: 16px !important;
+            font-weight: 600;
+            color: rgb(0, 89, 255);
+
+        }
+    }
+}

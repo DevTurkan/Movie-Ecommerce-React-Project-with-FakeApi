@@ -1,0 +1,427 @@
+.prp_cardcom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: yellow;
+    width:calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-top: 30px;
+
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    perspective: 100px;
+    &:nth-child(4n + 4){
+        margin-right: 0;
+    }
+
+    .prp_card{
+        width:100%;                                                      //90%
+        background-color: transparent;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 1s;
+        &:hover {
+            transform: translateZ(7px);
+            
+        }
+
+        .prp_cardimg_common{
+            width: 100%;
+            height: 385px;
+            // background-color: rgba(0,0,0,.45); ..................
+            border-radius: 4px;
+            // box-shadow: 0 0 4px rgb(0 0 0 / 30%); ..............
+            position: relative;
+            box-shadow: rgba(167, 167, 167, 0.9) 0px 0px 10px;
+
+            .prp_cardimg{
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                // height: 375px;
+                height: 385px;
+                border-radius: 4px;
+
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    opacity: 1;
+                    vertical-align: middle;
+
+                }
+            }
+
+            a{
+                display: block;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+        
+        .prp_cardtitle{
+
+            width: 100%;
+            // height: 60px;
+            border-radius: 4px;
+            margin-top: 3px;
+            background-color: rgba(32, 35, 51, 0.712);
+            box-sizing: border-box;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(167, 167, 167, 0.9) 0px 0px 10px;
+
+            h4, p{
+                color: white;
+            }
+        }
+    }
+}
+
+
+// ------------------RESPONSIVELIK-----------
+@media screen and (min-width: 500px) and (max-width: 549px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: yellow;
+        width: 85% !important;
+        margin-right: 0 !important;
+        margin-top: 30px;
+    
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        perspective: 100px;
+        &:nth-child(2n + 2){
+            margin-right: 0 !important;
+        }
+
+        // &:nth-child(4), &:nth-child(8),  &:nth-child(16),  &:nth-child(20),  &:nth-child(28),  &:nth-child(32){
+        //     margin-right: 30px !important;
+        // }
+
+                    .prp_card{
+                        .prp_cardimg_common{
+                            height: 490px !important;
+                        
+                            .prp_cardimg{
+                                height: 490px !important;
+                            }  
+                        }
+                        // .prp_cardtitle{
+                        //     // padding: 6px 4px !important;
+                        
+                        //         h4, p{
+                        //             font-size: 13px !important;
+                        //         }
+                        // }
+                    }
+       
+    }
+
+}
+@media screen and (min-width: 550px) and (max-width: 599px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: yellow;
+        width:calc((100% - 40px) / 2) !important;
+        margin-right: 40px !important;
+        margin-top: 30px;
+    
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        perspective: 100px;
+        &:nth-child(2n + 2){
+            margin-right: 0 !important;
+        }
+
+        // &:nth-child(4), &:nth-child(8),  &:nth-child(16),  &:nth-child(20),  &:nth-child(28),  &:nth-child(32){
+        //     margin-right: 30px !important;
+        // }
+
+                    .prp_card{
+                        .prp_cardimg_common{
+                            height: 320px !important;
+                        
+                            .prp_cardimg{
+                                height: 320px !important;
+                            }  
+                        }
+                        .prp_cardtitle{
+                            // padding: 6px 4px !important;
+                        
+                                h4, p{
+                                    font-size: 13px !important;
+                                }
+                        }
+                    }
+       
+    }
+
+}
+@media screen and (min-width: 600px) and (max-width: 629px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: yellow;
+        width:calc((100% - 50px) / 2) !important;
+        margin-right: 50px !important;
+        margin-top: 30px;
+    
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        perspective: 100px;
+        &:nth-child(2n + 2){
+            margin-right: 0 !important;
+        }
+
+        // &:nth-child(4), &:nth-child(8),  &:nth-child(16),  &:nth-child(20),  &:nth-child(28),  &:nth-child(32){
+        //     margin-right: 30px !important;
+        // }
+
+                    .prp_card{
+                        .prp_cardimg_common{
+                            height: 355px !important;
+                        
+                            .prp_cardimg{
+                                height: 355px !important;
+                            }  
+                        }
+                        .prp_cardtitle{
+                            // padding: 6px 4px !important;
+                        
+                                h4, p{
+                                    font-size: 13px !important;
+                                }
+                        }
+                    }
+       
+    }
+
+}
+
+@media screen and (min-width: 630px) and (max-width: 759px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: yellow;
+        width:calc((100% - 40px) / 2) !important;
+        margin-right: 40px !important;
+        margin-top: 30px;
+    
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        perspective: 100px;
+        &:nth-child(2n + 2){
+            margin-right: 0 !important;
+        }
+
+        // &:nth-child(4), &:nth-child(8),  &:nth-child(16),  &:nth-child(20),  &:nth-child(28),  &:nth-child(32){
+        //     margin-right: 30px !important;
+        // }
+
+                    .prp_card{
+                        .prp_cardimg_common{
+                            height: 385px !important;
+                        
+                            .prp_cardimg{
+                                height: 385px !important;
+                            }  
+                        }
+                        .prp_cardtitle{
+                            // padding: 6px 4px !important;
+                        
+                                h4, p{
+                                    font-size: 13px !important;
+                                }
+                        }
+                    }
+       
+    }
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 799px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: yellow;
+        width:calc((100% - 60px) / 3) !important;
+        margin-right: 30px;
+        margin-top: 30px;
+    
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        perspective: 100px;
+        &:nth-child(3n + 3){
+            margin-right: 0 !important;
+        }
+
+        &:nth-child(4), &:nth-child(8),  &:nth-child(16),  &:nth-child(20),  &:nth-child(28),  &:nth-child(32){
+            margin-right: 30px !important;
+        }
+
+        .prp_card{
+            .prp_cardimg_common{
+                height: 320px !important;
+               
+                .prp_cardimg{
+                    height: 320px !important;
+                }  
+            }
+            .prp_cardtitle{
+                // padding: 6px 4px !important;
+              
+                    h4, p{
+                        font-size: 13px !important;
+                    }
+            }
+        }
+       
+    }
+
+}
+@media screen and (min-width: 800px) and (max-width: 899px){
+    .prp_cardcom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: yellow;
+        width:calc((100% - 60px) / 3) !important;
+        margin-right: 30px;
+        margin-top: 30px;
+    
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        perspective: 100px;
+        &:nth-child(3n + 3){
+            margin-right: 0 !important;
+        }
+
+        &:nth-child(4), &:nth-child(8),  &:nth-child(16),  &:nth-child(20),  &:nth-child(28),  &:nth-child(32){
+            margin-right: 30px !important;
+        }
+
+        .prp_card{
+            .prp_cardimg_common{
+                height: 340px !important;
+               
+                .prp_cardimg{
+                    height: 340px !important;
+                }  
+            }
+            .prp_cardtitle{
+                // padding: 6px 4px !important;
+              
+                    // h4, p{
+                    //     font-size: 15px !important;
+                    // }
+            }
+        }
+       
+    }
+
+}
+@media screen and (min-width: 900px) and (max-width: 999px){
+    .prp_cardcom{
+        width:calc((100% - 60px) / 3) !important;
+        &:nth-child(3n + 3){
+            margin-right: 0 !important;
+        }
+
+        &:nth-child(4), &:nth-child(8),  &:nth-child(16),  &:nth-child(20),  &:nth-child(28),  &:nth-child(32){
+            margin-right: 30px !important;
+        }
+       
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1099px){
+    .prp_cardimg_common{
+        height: 320px !important;
+       
+        .prp_cardimg{
+            height: 320px !important;
+        }  
+    }
+    .prp_cardtitle{
+        // padding: 6px 4px !important;
+      
+        h4, p{
+            font-size: 13px !important;
+        }
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1139px){
+    .prp_cardimg_common{
+        height: 330px !important;
+       
+        .prp_cardimg{
+            height: 330px !important;
+        }  
+    }
+    .prp_cardtitle{
+        // padding: 6px 4px !important;
+      
+        h4, p{
+            font-size: 13px !important;
+        }
+    }
+}
+@media screen and (min-width: 1140px) and (max-width: 1149px){
+    .prp_cardimg_common{
+        height: 340px !important;
+       
+        .prp_cardimg{
+            height: 340px !important;
+        }  
+    }
+    .prp_cardtitle{
+        // padding: 6px 4px !important;
+      
+        h4, p{
+            font-size: 14px !important;
+        }
+    }
+}
+@media screen and (min-width: 1150px) and (max-width: 1154px){
+    .prp_cardimg_common{
+        height: 360px !important;
+       
+        .prp_cardimg{
+            height: 360px !important;
+        }  
+    }
+
+    .prp_cardtitle{
+        // padding: 6px 4px !important;
+      
+        h4, p{
+            font-size: 14px !important;
+        }
+    }
+}
+@media screen and (min-width: 1155px) and (max-width: 1220px){
+    .prp_cardimg_common{
+        height: 360px !important;
+       
+        .prp_cardimg{
+            height: 360px !important;
+        }  
+    }
+}

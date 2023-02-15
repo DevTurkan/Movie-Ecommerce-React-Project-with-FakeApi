@@ -1,0 +1,227 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: unset;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-variant: unset !important;
+  font-feature-settings: normal !important;
+  border: 0;
+  border-radius: 0;
+
+  scroll-behavior: smooth;
+
+  // ::-webkit-scrollbar{
+  //   width: 12px;
+  // }
+
+  // ::-webkit-scrollbar-track{
+  //     // border-radius: 100vh;
+  //     background-color: rgb(73, 72, 72);
+  // }
+
+  // ::-webkit-scrollbar-thumb{
+  //   border-radius: 10px;
+  //     background: linear-gradient(rgb(201, 223, 201), rgb(213, 213, 241), rgb(131, 125, 130));
+  // }
+}
+
+
+html,
+body,
+#root {
+  float: left;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  // background-color: rgb(223, 224, 226);
+  background-color: white;
+  // background-color: #f7f7f7;
+  // background-color: #28343c;
+  font-variant: unset !important;
+  font-feature-settings: normal !important;
+}
+
+p, ul, h1, h2, h3, h4, h5, h6{
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  line-height: unset;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+ol, ul{
+  list-style-type: none;
+
+  li{
+    float: left;
+    position: relative;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*custom class*/
+.center{
+  margin: 0 auto;
+  float: none;
+  position: relative;
+}
+
+.full{
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.full_h{
+  height: 100%;
+}
+
+.pos_rel{
+  position: relative;
+}
+
+.pos_abs{
+  position: absolute;
+}
+
+.float_left{
+  float: left;
+}
+
+.float_right{
+  float: right;
+}
+
+.float_none{
+  float: none;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.center{
+  position: relative;
+  margin: 0 auto;
+}
+
+.has_bg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.align_center{
+  align-items: center;
+}
+
+.align_end{
+  align-items: flex-end;
+}
+
+.justify_between{
+  justify-content: space-between;
+}
+
+.justify_center{
+  justify-content: center;
+}
+
+.justify_end{
+  justify-content: flex-end;
+}
+
+.direction_column{
+  flex-direction: column;
+}
+
+.flex_wrap{
+  flex-wrap: wrap;
+}
+
+.flex_1{
+  flex: 1;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.no_bg_color{
+  background-color: unset !important;
+}
+
+.height_auto{
+  height: unset !important;
+}
+
+.ant-input{
+  border: 0;
+  box-shadow: unset;
+  border-radius: 0;
+  outline: none;
+}
+
+.ant-btn{
+  box-shadow: unset;
+  background-color: unset;
+  border:0;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+  line-height: unset;
+}
+
+.ant-btn:hover,
+.ant-btn:focus,
+.ant-btn:active{
+  background: inherit;
+}
+
+.ant-btn:hover, .ant-btn:focus{
+  color: inherit;
+  border-color: inherit;
+  background: inherit;
+}
+
+.ant-input:focus, .ant-input-focused{
+  border-color: inherit;
+  box-shadow: unset;
+  border-right-width: inherit;
+}
+
+.ant-form-item{
+  margin-bottom: 0;
+}

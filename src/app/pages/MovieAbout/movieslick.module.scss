@@ -1,0 +1,46 @@
+.content{
+    width: 100%;
+    // background-color: rgb(215, 215, 230);
+// display: flex;
+    .childd{
+        width:100%;
+        position: relative;
+        // display: flex;
+        /* width: 200px; */
+
+        .child_text{
+            // background-color: #697d91;
+            // border-radius: 10px;
+            width: 245px !important;
+            height: 200px !important;
+            margin: 1.5rem;
+            display: flex !important;
+            // flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // padding: 16px;
+            transition: .3s ease-in-out;
+            perspective: 100px;
+// border: 2px solid red;
+            img{
+                height: 160px;
+                box-shadow: rgba(41, 46, 54, 0.9) 0px 0px 15px;
+                transition: transform 1s;
+                // object-fit:contain;
+                &:hover{
+                    transform: translateZ(20px);
+                    // transition: .8s ease-in-out;
+
+                }
+            }
+
+
+        }
+
+
+    }
+
+    
+
+
+}

@@ -1,0 +1,95 @@
+.container2_buttons{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:30px;
+    .mcenter_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        padding: 7px 10px;
+        border-radius: 4px;
+        background-color: rgb(29, 38, 54);
+        transition: all .5s;
+        .container2_buttonspan{
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            span{
+                color:white;
+                font-family: 'Poppins-SemiBold';
+            }
+
+            svg{
+                height: 17px;
+                fill:currentColor;
+                color: white;
+                margin-right: 5px;
+            }
+        }
+
+        &:hover{
+            background-color: rgb(40, 151, 185);
+        }
+    }
+
+    .activ_button{
+       background-color: rgb(40, 151, 185);
+    }
+   
+}
+
+
+
+// ------------------RESPONSIVELIK-----------
+
+@media screen and (min-width: 500px) and (max-width: 549px){
+    .container2_buttons{
+        width: 100% !important;
+        .mcenter_button{
+            font-size: 10px !important;
+            svg{
+                height: 14px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 649px){
+    .container2_buttons{
+        width: 100% !important;
+        .mcenter_button{
+            font-size: 12px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 699px){
+    .container2_buttons{
+        width: 90% !important;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 819px){
+    .container2_buttons{
+        width: 80% !important;
+    }
+}
+@media screen and (min-width: 820px) and (max-width: 949px){
+    .container2_buttons{
+        width: 65% !important;
+    }
+}
+@media screen and (min-width: 950px) and (max-width: 1160px){
+    .container2_buttons{
+        width: 55% !important;
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1250px){
+    .container2_buttons{
+        width: 55% !important;
+    }
+}
